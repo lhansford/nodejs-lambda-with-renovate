@@ -1,0 +1,26 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "customManagers": [{
+    "customType": "regex",
+    "datasourceTemplate": "node-version",
+    "managerFilePatterns": ["template.yaml"],
+    "matchStrings": [
+      "Runtime: nodejs(?<currentValue>.*)"
+    ],
+    "packageNameTemplate": "AWS Lambda Node"
+  }],
+  "packageRules": [{
+    "versioning": "lambda-node",
+    "commitMessageTopic": "Node.js",
+    "matchDatasources": [
+      "node-version",
+      "npm",
+      "nvm"
+    ],
+    "matchPackageNames": [
+      "node",
+      "@types/node",
+      "AWS Lambda Node"
+    ]
+  }]
+}
