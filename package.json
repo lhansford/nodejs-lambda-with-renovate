@@ -1,0 +1,9 @@
+{
+  "name": "nodejs-lambda-with-renovate",
+  "devDependencies": {
+    "@types/node": "22.0.0"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
