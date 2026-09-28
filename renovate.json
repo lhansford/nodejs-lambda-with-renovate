@@ -11,6 +11,7 @@
   }],
   "packageRules": [{
     "versioning": "lambda-node",
+    "groupName": "Node.js",
     "commitMessageTopic": "Node.js",
     "matchDatasources": [
       "node-version",
